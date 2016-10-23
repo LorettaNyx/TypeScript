@@ -5,6 +5,6 @@
         "inlineSourceMap": true,
         "watch": true,
         "module": "commonjs",
-        "outFile": "loops.js"
+        "outFile": "nameOfTheFile.js"
     }
 }

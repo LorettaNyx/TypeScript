@@ -1,6 +1,7 @@
 
-  //  Convert floating-point to integer number
+   // Convert to integer number with rounding
 
 var valueDouble = 8.75;
-var valueInt = valueDouble | 0; // 8
-console.log(valueInt);
+var roundedInt = (valueDouble + 0.5) | 0; // 9
+console.log(roundedInt);
+

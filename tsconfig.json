@@ -1,0 +1,10 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es5",
+        "inlineSourceMap": true,
+        "watch": true,
+        "module": "commonjs",
+        "outFile": "loops.js"
+    }
+}

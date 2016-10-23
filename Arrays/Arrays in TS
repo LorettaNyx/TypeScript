@@ -1,0 +1,38 @@
+var agesArray = [17,19];
+console.log(`The lenght of the array is ${agesArray.length}`);
+
+//array literal,Работи по-бързо
+var arr=[1,2,[true,-2],"Gosho"];
+console.log(arr[3]);
+//array constructor,x
+var arr2=new Array(1,2);
+console.log(arr2[2]);
+//
+var age:number=17;
+//Няма смисъл да се добавят типове на стринг
+var names:[string]=["John","Someone"];
+//this is equal to
+var names2:[any]=["John","Someone"];
+//this
+var names3=["John","Someone"];
+//or like this var names:string[]=["John","Someone"]; or this =  var names:Array<number>=["John","Someone"];
+//
+var arrr=new Array(5);
+console.log(arrr.length);
+//we call the second array/[2,3,4] and the [4] /printout 4/  
+var aoa = [1,[2,3,4]];
+console.log(aoa [1][2]);
+//
+var namess=["Ashe","Volibear","Aatrox"];
+//index between [0:2];
+console.log(namess[0]);
+console.log(namess[1]);
+console.log(namess[2]);
+//prints undefined
+console.log(names["Aatrox"]);
+//
+const genders=["Male","female"];
+genders.push
+
+
+

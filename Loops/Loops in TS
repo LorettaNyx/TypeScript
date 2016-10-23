@@ -1,0 +1,8 @@
+let currentNumber = 1;
+let endNumber = 10000;
+    while (currentNumber<=endNumber){
+    console.log(currentNumber);
+        currentNumber+=4;
+    }
+
+    

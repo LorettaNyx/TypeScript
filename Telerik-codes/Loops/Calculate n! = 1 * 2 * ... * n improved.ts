@@ -3,7 +3,7 @@ let n: number = 6;
 let result: number = 1;
 let logable = n;
 while (true) {
-    if (n === 1) {
+    if (n <= 1) {
         break;
     }
 

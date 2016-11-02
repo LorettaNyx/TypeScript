@@ -25,3 +25,5 @@ function compareStrings(args) {
 
 	return '=';
 }
+console.log(compareStrings([ 'meow\nmeowo' ]));
+console.log(compareStrings(['rawr\nrawr']));

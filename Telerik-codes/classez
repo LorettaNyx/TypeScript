@@ -1,0 +1,42 @@
+class Person {
+    public static personID:number = 1;
+    protected _fullName:string;
+    private _id: number;
+    //constructor povedenie na klasa; kazva na poleto _fullName da prieme stoinostta fullName podavame ime
+    constructor(fullName:string){
+        //syzdavame pole , koeto dyrji definiciqta na personID i uvelichavame 
+        this._id = Person.personID++;
+        this._fullName = fullName;
+    }
+    //properties
+   //za da izvikvame izvyn klasa
+   public get fullName():string{
+       return this._fullName;
+   }
+   //promenqne na stoinost
+   public set fullName(value: string){
+       //imeto da e na latinica
+       for(let i =0;i<value.length;i++){
+           const charNumber = parseInt(value[i]);
+           const isAlpha = !((charNumber >= 65 && charNumber<=90) || (charNumber>=97 && charNumber<=122));
+           const isSpace = charNumber === 32; 
+           if(!isAlpha && !isSpace){
+               console.log("Sorry...");
+               break;
+           }
+       }
+       this._fullName = value;
+    }
+   public get id():number{
+       return this._id;
+   }
+}
+//methods
+// // public get(fullName)
+//     let person = new Person("Jhon Doe");
+//     console.log(person.fullName);
+//     Person.personID
+//     console.log(person.id);
+//     let stanislav = new Person("yolo");
+//     console.log(stanislav.fullName);
+//     console.log(stanislav.id);

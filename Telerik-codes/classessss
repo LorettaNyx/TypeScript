@@ -1,0 +1,41 @@
+class Person {
+    public static personId: number = 1;
+ 
+    private _fullName: string;
+    private _id: number;
+ 
+    constructor(fullName: string) {
+        this._id = Person.personId++;
+        this._fullName = fullName
+    }
+ 
+    public get fullName(): string {
+        return this._fullName;
+    }
+ 
+    public set fullName(value: string) {
+        for (let i = 0; i < value.length; i++) {
+            const charNumber = value.charCodeAt(i);
+            const isAlpha = ((charNumber >= 65 && charNumber <= 90) ||
+                (charNumber >= 97 && charNumber <= 122));
+            const isSpace = charNumber === 32;
+ 
+            if (!isAlpha && !isSpace) {
+                console.log("Sorry, cannot assign this value to the field 'fullName'");
+                throw 'Exception';
+            }
+        }
+ 
+        this._fullName = value;
+    }
+ 
+    public get id(): number {
+        return this._id;
+    }
+}
+ 
+let stanislav = new Person("Stanislav Kolev");
+console.log(stanislav.fullName);
+ 
+stanislav.fullName = "Neshto drugo@";
+console.log(stanislav.fullName);

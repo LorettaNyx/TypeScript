@@ -1,0 +1,17 @@
+class Dog {
+    public age: number;
+    public name:string;
+    public breed: string;
+    public food: string[];
+}
+let doggy = new Dog();
+doggy.age=2;
+doggy.breed="Bolonka";
+doggy.name="Balo";
+doggy.food=["mechkki" , "krastavica"];
+
+function walkDog(dog:Dog) :void{
+    //execute logic
+    //dog.age...
+}
+walkDog(doggy);

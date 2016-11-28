@@ -1,6 +1,6 @@
-function printNumbersTo(args) {
+function solve(banichka) {
     var i,
-    	n = +args[0],
+    	n = +banichka[0],
         result = '';
 
     for (i = 1; i <= n; i++) {
@@ -9,3 +9,4 @@ function printNumbersTo(args) {
 
     return result;
 }
+solve(['5'])
